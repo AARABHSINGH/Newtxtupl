@@ -41,12 +41,12 @@ from pyshorteners import Shortener
 
 botStartTime = time.time()
 bot = Client("bot",
-             bot_token= "7018437002:AAG6WuPCt4Hb9VmPJg", 
-             api_id= 202988,
-             api_hash= "f550d6179131cf8c24f594")
+             bot_token= "7027553426:AAFahXChWsKijBFis8fJxjaTI6VFl6bIM2g", 
+             api_id= 20299588,
+             api_hash= "f550d6179131c293d658f15f8c24f594")
 
 #global Variables 
-log_channel_id = -10020438938
+log_channel_id = -1002086144486
 
 @bot.on_message(filters.command(["Start"]))
 async def account_login(bot: Client, m: Message):
