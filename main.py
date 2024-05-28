@@ -27,7 +27,7 @@ import os
 from pyrogram.types import InputMediaDocument
 import time
 import random 
-from psutil import disk_usage, cpu_percent, swap_memory, cpu_count, virtual_memory, net_io_counters, boot_time
+#from psutil import disk_usage, cpu_percent, swap_memory, cpu_count, virtual_memory, net_io_counters, boot_time
 import asyncio
 from pytube import Playlist
 from pyrogram import Client, filters
