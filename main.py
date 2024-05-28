@@ -213,7 +213,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading📥:-**\n\n** Video Name :-** `{name}\n\n╰─⌈ **Bot Made By @MASOOMGURJARTG** ⌋────╯")
+                    prog = await m.reply_text(f"**Downloading📥:-**\n\n** Video Name :-** `{name}\n\n╰─⌈ **Bot Made By @MASOOMGURJARTG** ⌋─╯")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -221,8 +221,8 @@ async def account_login(bot: Client, m: Message):
                     count += 1
             except Exception as e:
                 logging.error(e)
-                await bot.send_message(log_channel_id, f"❌ **Failed To Download** ❌\n**Name**: {name}\n**Link**: `{url}`\n\n╰─⌈ **Bot Made By @MASOOMGURJARTG** ⌋────╯", disable_notification=True)
-                await m.reply_text(f"**Failed To Download ❌**\n**Name** - {name}\n**Link** - `{url}`╰─⌈**Bot Made By @MASOOMGURJARTG**⌋────╯")
+                await bot.send_message(log_channel_id, f"❌ **Failed To Download** ❌\n**Name**: {name}\n**Link**: `{url}`\n\n╰─⌈ **Bot Made By @MASOOMGURJARTG** ⌋─╯", disable_notification=True)
+                await m.reply_text(f"**Failed To Download ❌**\n**Name** - {name}\n**Link** - `{url}`╰─⌈**Bot Made By @MASOOMGURJARTG**⌋─╯")
                 time.sleep(3)
                 continue
     except Exception as e:
