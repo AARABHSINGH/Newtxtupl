@@ -41,12 +41,12 @@ from pyshorteners import Shortener
 
 botStartTime = time.time()
 bot = Client("bot",
-             bot_token= "7027553426:AAFahXChWsKijBFis8fJxjaTI6VFl6bIM2g", 
-             api_id= 20299588,
-             api_hash= "f550d6179131c293d658f15f8c24f594")
+             bot_token= "7335464967:AAE_B77yuVtupfTBVLOmbd6F1KApjsR0W9E", 
+             api_id= 25434657,
+             api_hash= "22cfc54f94cf17360dc1475a51e38518")
 
 #global Variables 
-log_channel_id = -1002086144486
+log_channel_id = -1002149340418
 
 @bot.on_message(filters.command(["Start"]))
 async def account_login(bot: Client, m: Message):
@@ -61,7 +61,7 @@ async def restart_handler(_, m):
 
 #-------------TXT Uploader Commands ---------------
 
-@bot.on_message(filters.command(["masoom"]))
+@bot.on_message(filters.command(["GURJAR"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(f"**Hey Send txt file**")
     input: Message = await bot.listen(editable.chat.id)
@@ -70,7 +70,7 @@ async def account_login(bot: Client, m: Message):
         await bot.send_document(log_channel_id, x)
         await input.delete(True)
         file_name, ext = os.path.splitext(os.path.basename(x))
-        credit = f"ʟʊʍɨռǟռȶ✨"
+        credit = f"GURJAR"
 
         path = f"./downloads/{m.chat.id}"
 
@@ -136,7 +136,7 @@ async def account_login(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     if raw_text3 == 'df':
-        CR = "ʟʊʍɨռǟռȶ✨"
+        CR = "GURJAR"
     else:
         CR = raw_text3
 
@@ -199,8 +199,8 @@ async def account_login(bot: Client, m: Message):
                 else:
                     cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
-                cc = f'**[📹]Video_ID : {str(count).zfill(3)}.**\n\n**Video Name :** {name1} ({res})masoom.mkv\n\n**Batch Name :** {b_name}\n\n**Downloaded By : {CR}**'
-                cc1 = f'**[📁]File_ID : {str(count).zfill(3)}.**\n\n**File Name :** {name1}masoom.pdf\n\n**Batch Name :** {b_name}\n\n**Downloaded By : {CR}**'
+                cc = f'**[📹]Video_ID : {str(count).zfill(3)}.**\n\n**Video Name :** {name1} ({res}) MASOOM 🇮🇳.mkv\n\n**Batch Name :** {b_name}\n\n**Downloaded By : {CR}**'
+                cc1 = f'**[📁]File_ID : {str(count).zfill(3)}.**\n\n**File Name :** {name1} MASOOM 🇮🇳.pdf\n\n**Batch Name :** {b_name}\n\n**Downloaded By : {CR}**'
                 
                 if "drive" in url:
                     try:
@@ -230,7 +230,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading📥:-**\n\n** Video Name :-** `{name}\n\n╰────⌈ **Bot Made By ʟʊʍɨռǟռȶ✨** ⌋────╯")
+                    prog = await m.reply_text(f"**Downloading📥:-**\n\n** Video Name :-** `{name}\n\n╰────⌈ **Bot Made By @MASOOMGURJARTG** ⌋────╯")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -238,8 +238,8 @@ async def account_login(bot: Client, m: Message):
                     count += 1
             except Exception as e:
                 logging.error(e)
-                await bot.send_message(log_channel_id, f"❌ **Failed To Download** ❌\n**Name**: {name}\n**Link**: `{url}`\n\n╰────⌈ **Bot Made By ʟʊʍɨռǟռȶ✨** ⌋────╯", disable_notification=True)
-                await m.reply_text(f"**Failed To Download ❌**\n**Name** - {name}\n**Link** - `{url}`╰────⌈**Bot Made By ʟʊʍɨռǟռȶ✨**⌋────╯")
+                await bot.send_message(log_channel_id, f"❌ **Failed To Download** ❌\n**Name**: {name}\n**Link**: `{url}`\n\n╰────⌈ **Bot Made By @MASOOMGURJARTG** ⌋────╯", disable_notification=True)
+                await m.reply_text(f"**Failed To Download ❌**\n**Name** - {name}\n**Link** - `{url}`╰────⌈**Bot Made By @MASOOMGURJARTG**⌋────╯")
                 time.sleep(3)
                 continue
     except Exception as e:
