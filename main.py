@@ -162,7 +162,6 @@ async def account_login(bot: Client, m: Message):
         count = int(raw_text)
 
     try:
-        await bot.send_message(log_channel_id, f"**•File name** - `{b_name}`({raw_text0})\n**•Total Links Found In TXT** - `{len(links)}`\n**•Starts from** - `{raw_text}`\n**•Resolution** - `{res}`({raw_text2})\n**•Caption** - `{raw_text3}`\n**•Thumbnail** - `{thumb}`")
         for i in range(count - 1, len(links)):
             if len(links[i]) != 2 or not links[i][1]:
                 # If the link is empty or not properly formatted, continue to the next iteration
@@ -201,7 +200,7 @@ async def account_login(bot: Client, m: Message):
                     cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
                 cc = f'**[📹]Video_ID : {str(count).zfill(3)}.**\n\n**Video Name :** {name1} ({res})masoom.mkv\n\n**Batch Name :** {b_name}\n\n**Downloaded By : {CR}**'
-                cc1 = f'**[📁]File_ID : {str(count).zfill(3)}.**\n\n**File Name :**{name1}masoom.pdf\n\n**Batch Name :**{b_name}\n\n**Downloaded By : {CR}**'
+                cc1 = f'**[📁]File_ID : {str(count).zfill(3)}.**\n\n**File Name :** {name1}masoom.pdf\n\n**Batch Name :** {b_name}\n\n**Downloaded By : {CR}**'
                 
                 if "drive" in url:
                     try:
