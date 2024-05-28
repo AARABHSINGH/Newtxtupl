@@ -1,6 +1,7 @@
-name": "GURJAR",
+{
+  "name": "GURJAR",
   "description": "Download videos from various websites using this telegram bot",
-  "repository": "https://github.com/AARABHSINGH/gurjartxtbot",
+  "repository": "https://github.com/AARABHSINGH/Newtxtupl",
   "buildpacks": [
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
@@ -26,3 +27,4 @@ name": "GURJAR",
       "value": "7004238454:AAG7dBmLrZa_hhc93vNp679YIi7xBKu8rIQ"
     }
   }
+}
