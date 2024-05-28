@@ -1,7 +1,7 @@
 {
-  "name": "Lakshay",
+  "name": "GURJAR",
   "description": "Download videos from various websites using this telegram bot",
-  "repository": "https://github.com/Lakshay24rohilla/LakshayTxtBot",
+  "repository": "https://github.com/AARABHSINGH/Newupl/gurjartxtbot",
   "buildpacks": [
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
@@ -16,14 +16,14 @@
   "env": {
     "API_ID": {
       "description": "Get your telegram API ID from https://my.telegram.org",
-      "value": "20299588"
+      "value": "25434657"
     },
     "API_HASH": {
       "description": "Get your telegram API HASH from https://my.telegram.org",
-      "value": "f550d6179131c293d658f15f8c24f594"
+      "value": "22cfc54f94cf17360dc1475a51e38518"
     },
     "BOT_TOKEN": {
       "description": "Get from BotFather",
-      "value": "7027553426:AAFahXChWsKijBFis8fJxjaTI6VFl6bIM2g"
+      "value": "7004238454:AAG7dBmLrZa_hhc93vNp679YIi7xBKu8rIQ"
     }
     }
