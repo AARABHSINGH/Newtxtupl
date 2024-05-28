@@ -1,43 +1,26 @@
+from pyrogram.errors.exceptions.bad_request_400 import StickerEmojiInvalid
 import requests
 import json
 import subprocess
-from pyrogram import Client,filters
+from pyrogram import Client, filters
 from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import FloodWait
 from pyromod import listen
 from pyrogram.types import Message
-import pyrogram
-import tgcrypto
+from pyrogram import Client, filters
 from p_bar import progress_bar
-from details import api_id, api_hash, bot_token, log_channel
-from urllib.parse import parse_qs, urlparse
 from subprocess import getstatusoutput
-import helper
-import logging
-import time
-import aiohttp
-import asyncio
-import aiofiles
 from aiohttp import ClientSession
+import helper
+from logger import logging
+import time
+import asyncio
 from pyrogram.types import User, Message
-import sys ,io
+from config import *
+import sys
 import re
 import os
-from pyrogram.types import InputMediaDocument
-import time
-import random 
-#from psutil import disk_usage, cpu_percent, swap_memory, cpu_count, virtual_memory, net_io_counters, boot_time
-import asyncio
-from pytube import Playlist
-from pyrogram import Client, filters
-from pyrogram.errors.exceptions import MessageIdInvalid
-import os
-from moviepy.editor import *
-import yt_dlp
-from bs4 import BeautifulSoup
-from pyrogram.types import InputMediaDocument
-from pyshorteners import Shortener
 
 botStartTime = time.time()
 bot = Client("bot",
