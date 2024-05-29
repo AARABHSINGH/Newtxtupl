@@ -24,12 +24,12 @@ import os
 
 botStartTime = time.time()
 bot = Client("bot",
-             bot_token= "7491925640:AAEOj9G26fycxXTP4mbgrQqUp__7bsBp-T0", 
+             bot_token= "7335464967:AAE_B77yuVtupfTBVLOmbd6F1KApjsR0W9E", 
              api_id= 25434657,
              api_hash= "22cfc54f94cf17360dc1475a51e38518")
 
 #global Variables 
-log_channel_id = -1002169031008
+log_channel_id = -1002149340418
 
 @bot.on_message(filters.command(["Start"]))
 async def account_login(bot: Client, m: Message):
@@ -213,7 +213,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    prog = await m.reply_text(f"**Downloading📥:-**\n\n** Video Name :-** `{name}\n\n╰─⌈ **Bot Made By @MASOOMGURJARTG** ⌋─╯")
+                    prog = await m.reply_text(f"**Downloading📥:-**\n\n** Video Name :-** `{name}\n\n**Bot Made By @MASOOMGURJARTG** ")
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
                     await prog.delete(True)
@@ -221,8 +221,8 @@ async def account_login(bot: Client, m: Message):
                     count += 1
             except Exception as e:
                 logging.error(e)
-                await bot.send_message(log_channel_id, f"❌ **Failed To Download** ❌\n**Name**: {name}\n**Link**: `{url}`\n\n╰─⌈ **Bot Made By @MASOOMGURJARTG** ⌋─╯", disable_notification=True)
-                await m.reply_text(f"**Failed To Download ❌**\n**Name** - {name}\n**Link** - `{url}`╰─⌈**Bot Made By @MASOOMGURJARTG**⌋─╯")
+                await bot.send_message(log_channel_id, f"❌ **Failed To Download** ❌\n**Name**: {name}\n**Link**: `{url}`\n\n **Bot Made By @MASOOMGURJARTG** ", disable_notification=True)
+                await m.reply_text(f"**Failed To Download ❌**\n**Name** - {name}\n**Link** - `{url}`**Bot Made By @MASOOMGURJARTG** ")
                 time.sleep(3)
                 continue
     except Exception as e:
