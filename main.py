@@ -24,12 +24,12 @@ import os
 
 botStartTime = time.time()
 bot = Client("bot",
-             bot_token= "7335464967:AAE_B77yuVtupfTBVLOmbd6F1KApjsR0W9E", 
+             bot_token= "7429923046:AAGwGgzYJDmT3v8KGAVTQVFwPk6Wyab48N8", 
              api_id= 25434657,
              api_hash= "22cfc54f94cf17360dc1475a51e38518")
 
 #global Variables 
-log_channel_id = -1002149340418
+log_channel_id = -1002209397514
 
 @bot.on_message(filters.command(["Start"]))
 async def account_login(bot: Client, m: Message):
